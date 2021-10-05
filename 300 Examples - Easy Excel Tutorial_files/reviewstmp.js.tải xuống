@@ -1,0 +1,73 @@
+<!--
+
+var today_obj=new Date()
+var today_second=today_obj.getSeconds()
+
+var reviews=new Array()
+
+//Configure the below array to hold the 60 possible reviews
+reviews[0]='Bradley - Jupiter, United States - <em>"Thank you for this website, it taught me so much about using Excel in a quick self-paced course."</em>'
+reviews[1]='Nick - Newbury, United Kingdom - <em>"I can\'t believe that a resource like this exists for free!"</em>'
+reviews[2]='Michelle - Red Bank, United States - <em>"I found your excellent tutorial on the web today. I find it very clear and easy to understand."</em>'
+reviews[3]='David - Orlando, United States - <em>"Your site showed me a great example I easily followed."</em>'
+reviews[4]='Malcolm - Melbourne, Australia - <em>"Your pages are clearly and logically designed. You\'ve put a great deal of thought into it\u2014it\'s a pleasure to read."</em>'
+reviews[5]='Richard - London, United Kingdom - <em>"Very clear, uncluttered, non-offensive to the eye!"</em>'
+reviews[6]='Jordyn - New York, United States - <em>"I recommended Excel Easy to my mom when she needed to learn excel in depth for work and she loved it."</em>'
+reviews[7]='Richard - Des Moines, United States - <em>"You pack a lot of information into a very understandable format with simple, clear explanations. Were all IT training such!"</em>'
+reviews[8]='Yam - Columbus, United States - <em>"Your website is very helpful! I have learned a lot in just a few days. Thank you so much for sharing your expertise in Excel."</em>'
+reviews[9]='Paul - Texarkana, United States - <em>"I came across Excel-easy.com and felt as though I could kiss my keyboard."</em>'
+reviews[10]='James - Cardiff, United Kingdom - <em>"I keep coming back to your examples. Your website is extremely helpful."</em>'
+reviews[11]='George - Tampa, United States - <em>"I accidentally found your site and I truly love it. It\'s easy to navigate, comprehensive and it provides sample files."</em>'
+reviews[12]='Julie - Milwaukee, United States - <em>"Excel-easy.com is such a fantastic resource for me. Your website is so simple and clear, as well as being cleanly organized."</em>'
+reviews[13]='Jesiqua - Toronto, Canada - <em>"I have labeled your site \"excel magic\" in my favourites tab."</em>'
+reviews[14]='Bill - New York, United States - <em>"Your site is marvelous. It has helped tremendously. So much easier to understand than others."</em>'
+reviews[15]='James - Vancouver, Canada - <em>"I began to actually understand what I was doing rather than just copying everything into my worksheet."</em>'
+reviews[16]='Lucio - San Juan, United States - <em>"This website is outstanding for saying the least."</em>'
+reviews[17]='Rohini - Houston, United States - <em>"You have done a great service to people like me who want to make their job more efficient. Hats off to all those who made this site possible."</em>'
+reviews[18]='Seng - Christchurch, New Zealand - <em>"I chose excel-easy over other websites and books because of its easy to follow explanations, logical progression, and examples."</em>'
+reviews[19]='Susan - Chicago, United States - <em>"Thank you so much for the awesome Excel VBA course you have put together!"</em>'
+reviews[20]='Michael - Folsom, United States - <em>"The examples that are given provide wonderful, well organized code examples that are true learning tools."</em>'
+reviews[21]='Ying - San Gabriel, United States - <em>"Love the website and the programs. Pave way for a better and deeper understanding on Excel VBA."</em>'
+reviews[22]='Ryan - North Olmsted, United States - <em>"What draws me to your site is the conciseness of material paired with simple examples. It makes for a super quick learning experience."</em>'
+reviews[23]='Natalia - Sydney, Australia - <em>"There are very few web-sites that are so intuitive and easy to follow!"</em>'
+reviews[24]='Len - Charlotte, United States - <em>"I want to thank you personally for creating and maintaining this site. You have my admiration and appreciation. Thank you!"</em>'
+reviews[25]='Richard - San Ramon, United States - <em>"The library of examples provide useful practice and lots of ready-to-go solutions. Great job guys!"</em>'
+reviews[26]='Tom - Atlanta, United States - <em>"I found your website about a month ago and have learned a ton so far."</em>'
+reviews[27]='Ed - New York, United States - <em>"This site is amazing, you really need to put everything into a book and sell it. I would be first in line!"</em>'
+reviews[28]='David - Vancouver, Canada - <em>"I would recommend this site to anyone who wanted to learn Excel and have the site as a go to reference. Thank you."</em>'
+reviews[29]='Trisha - Boise, United States - <em>"Thank you so much for being out there in cyberspace for others like me to find - you are angels!"</em>'
+
+reviews[30]='Bradley - Jupiter, United States - <em>"Thank you for this website, it taught me so much about using Excel in a quick self-paced course."</em>'
+reviews[31]='Nick - Newbury, United Kingdom - <em>"I can\'t believe that a resource like this exists for free!"</em>'
+reviews[32]='Michelle - Red Bank, United States - <em>"I found your excellent tutorial on the web today. I find it very clear and easy to understand."</em>'
+reviews[33]='David - Orlando, United States - <em>"Your site showed me a great example I easily followed."</em>'
+reviews[34]='Malcolm - Melbourne, Australia - <em>"Your pages are clearly and logically designed. You\'ve put a great deal of thought into it\u2014it\'s a pleasure to read."</em>'
+reviews[35]='Richard - London, United Kingdom - <em>"Very clear, uncluttered, non-offensive to the eye!"</em>'
+reviews[36]='Jordyn - New York, United States - <em>"I recommended Excel Easy to my mom when she needed to learn excel in depth for work and she loved it."</em>'
+reviews[37]='Richard - Des Moines, United States - <em>"You pack a lot of information into a very understandable format with simple, clear explanations. Were all IT training such!"</em>'
+reviews[38]='Yam - Columbus, United States - <em>"Your website is very helpful! I have learned a lot in just a few days. Thank you so much for sharing your expertise in Excel."</em>'
+reviews[39]='Paul - Texarkana, United States - <em>"I came across Excel-easy.com and felt as though I could kiss my keyboard."</em>'
+reviews[40]='James - Cardiff, United Kingdom - <em>"I keep coming back to your examples. Your website is extremely helpful."</em>'
+reviews[41]='George - Tampa, United States - <em>"I accidentally found your site and I truly love it. It\'s easy to navigate, comprehensive and it provides sample files."</em>'
+reviews[42]='Julie - Milwaukee, United States - <em>"Excel-easy.com is such a fantastic resource for me. Your website is so simple and clear, as well as being cleanly organized."</em>'
+reviews[43]='Jesiqua - Toronto, Canada - <em>"I have labeled your site \"excel magic\" in my favourites tab."</em>'
+reviews[44]='Bill - New York, United States - <em>"Your site is marvelous. It has helped tremendously. So much easier to understand than others."</em>'
+reviews[45]='James - Vancouver, Canada - <em>"I began to actually understand what I was doing rather than just copying everything into my worksheet."</em>'
+reviews[46]='Lucio - San Juan, United States - <em>"This website is outstanding for saying the least."</em>'
+reviews[47]='Rohini - Houston, United States - <em>"You have done a great service to people like me who want to make their job more efficient. Hats off to all those who made this site possible."</em>'
+reviews[48]='Seng - Christchurch, New Zealand - <em>"I chose excel-easy over other websites and books because of its easy to follow explanations, logical progression, and examples."</em>'
+reviews[49]='Susan - Chicago, United States - <em>"Thank you so much for the awesome Excel VBA course you have put together!"</em>'
+reviews[50]='Michael - Folsom, United States - <em>"The examples that are given provide wonderful, well organized code examples that are true learning tools."</em>'
+reviews[51]='Ying - San Gabriel, United States - <em>"Love the website and the programs. Pave way for a better and deeper understanding on Excel VBA."</em>'
+reviews[52]='Ryan - North Olmsted, United States - <em>"What draws me to your site is the conciseness of material paired with simple examples. It makes for a super quick learning experience."</em>'
+reviews[53]='Natalia - Sydney, Australia - <em>"There are very few web-sites that are so intuitive and easy to follow!"</em>'
+reviews[54]='Len - Charlotte, United States - <em>"I want to thank you personally for creating and maintaining this site. You have my admiration and appreciation. Thank you!"</em>'
+reviews[55]='Richard - San Ramon, United States - <em>"The library of examples provide useful practice and lots of ready-to-go solutions. Great job guys!"</em>'
+reviews[56]='Tom - Atlanta, United States - <em>"I found your website about a month ago and have learned a ton so far."</em>'
+reviews[57]='Ed - New York, United States - <em>"This site is amazing, you really need to put everything into a book and sell it. I would be first in line!"</em>'
+reviews[58]='David - Vancouver, Canada - <em>"I would recommend this site to anyone who wanted to learn Excel and have the site as a go to reference. Thank you."</em>'
+reviews[59]='Trisha - Boise, United States - <em>"Thank you so much for being out there in cyberspace for others like me to find - you are angels!"</em>'
+
+document.write(reviews[today_second])
+
+//-->
